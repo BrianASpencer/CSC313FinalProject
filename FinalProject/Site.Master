@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+        
+        <title>MTG Core</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <header>
+        <h1>MTG Core</h1>
+    </header>
+
+    <nav>
+        <a href="default.aspx">Home Page</a> &nbsp; &nbsp;
+        <a href="Query.aspx">Search Page</a>  &nbsp; &nbsp;
+        <a href="Insert.aspx">Insert Page</a>  &nbsp; &nbsp;
+        <br><br><br>
+    </nav>
+
+    <form id="form1" runat="server">
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <main>  
+            
+    </main>
+
+    <br>
+        
+    <footer>
+        <br><br>
+        Brian Spencer
+        <br>
+        Final Project
+        <br>
+        May 8, 2019
+    </footer>
+
+</body>
+</html>
